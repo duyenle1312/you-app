@@ -1,190 +1,13 @@
 import React from "react";
-import Link from 'next/link'; 
-import Image from 'next/image'
+import Link from "next/link";
+import Image from "next/image";
 
 const Home = () => {
   return (
-    <div className="app bg-gray-100">
-      <nav className="bg-white w-full flex relative shadow justify-between items-center px-8 h-20">
-        {/* logo */}
-        <div className="inline-flex">
-          <Link className="flex _o6689fn" href="/">
-            <svg
-              viewBox="0 0 24 24"
-              width={24}
-              height={24}
-              stroke="currentColor"
-              strokeWidth={2}
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="css-i6dzq1"
-            >
-              <circle cx={12} cy={5} r={3} />
-              <line x1={12} y1={22} x2={12} y2={8} />
-              <path d="M5 12H2a10 10 0 0 0 20 0h-3" />
-            </svg>
-            <h1 className="text-xl font-bold ml-3">YOU</h1>
-          </Link>
-        </div>
-        {/* end logo */}
-        {/* search bar */}
-        {/* <div class="hidden sm:block flex-shrink flex-grow-0 justify-start px-2"> */}
-        <div className="relative hidden sm:block flex-shrink flex-grow-0">
-          <input
-            type="text"
-            className="bg-purple-white bg-gray-100 rounded-lg border-0 p-3 w-full"
-            placeholder="Search somthing..."
-            style={{ minWidth: 400 }}
-          />
-          <div className="absolute top-0 right-0 p-4 pr-3 text-purple-lighter">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </div>
-        </div>
-        {/* end search bar */}
-        {/* login */}
-        <div className="flex-initial">
-          <div className="flex justify-end items-center relative">
-            <div className="flex mr-4 items-center">
-              <div className="block relative">
-                <button
-                  type="button"
-                  className="inline-block py-2 px-3 hover:bg-gray-200 rounded-full relative "
-                >
-                  <div className="flex items-center h-5">
-                    <div className="_xpkakx">
-                      <svg
-                        viewBox="0 0 16 16"
-                        xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true"
-                        role="presentation"
-                        focusable="false"
-                        style={{
-                          display: "block",
-                          height: 16,
-                          width: 16,
-                          fill: "currentcolor",
-                        }}
-                      >
-                        <path d="m8.002.25a7.77 7.77 0 0 1 7.748 7.776 7.75 7.75 0 0 1 -7.521 7.72l-.246.004a7.75 7.75 0 0 1 -7.73-7.513l-.003-.245a7.75 7.75 0 0 1 7.752-7.742zm1.949 8.5h-3.903c.155 2.897 1.176 5.343 1.886 5.493l.068.007c.68-.002 1.72-2.365 1.932-5.23zm4.255 0h-2.752c-.091 1.96-.53 3.783-1.188 5.076a6.257 6.257 0 0 0 3.905-4.829zm-9.661 0h-2.75a6.257 6.257 0 0 0 3.934 5.075c-.615-1.208-1.036-2.875-1.162-4.686l-.022-.39zm1.188-6.576-.115.046a6.257 6.257 0 0 0 -3.823 5.03h2.75c.085-1.83.471-3.54 1.059-4.81zm2.262-.424c-.702.002-1.784 2.512-1.947 5.5h3.904c-.156-2.903-1.178-5.343-1.892-5.494l-.065-.007zm2.28.432.023.05c.643 1.288 1.069 3.084 1.157 5.018h2.748a6.275 6.275 0 0 0 -3.929-5.068z" />
-                      </svg>
-                    </div>
-                  </div>
-                </button>
-              </div>
-            </div>
-            <div className="block">
-              <div className="inline relative">
-                <button
-                  type="button"
-                  className="inline-flex items-center relative px-2 border rounded-full hover:shadow-lg"
-                >
-                  <div className="pl-1">
-                    <svg
-                      viewBox="0 0 32 32"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden="true"
-                      role="presentation"
-                      focusable="false"
-                      style={{
-                        display: "block",
-                        fill: "none",
-                        height: 16,
-                        width: 16,
-                        stroke: "currentcolor",
-                        strokeWidth: 3,
-                        overflow: "visible",
-                      }}
-                    >
-                      <g fill="none" fillRule="nonzero">
-                        <path d="m2 16h28" />
-                        <path d="m2 24h28" />
-                        <path d="m2 8h28" />
-                      </g>
-                    </svg>
-                  </div>
-                  <div className="block flex-grow-0 flex-shrink-0 h-10 w-12 pl-5">
-                    <svg
-                      viewBox="0 0 32 32"
-                      xmlns="http://www.w3.org/2000/svg"
-                      aria-hidden="true"
-                      role="presentation"
-                      focusable="false"
-                      style={{
-                        display: "block",
-                        height: "100%",
-                        width: "100%",
-                        fill: "currentcolor",
-                      }}
-                    >
-                      <path d="m16 .7c-8.437 0-15.3 6.863-15.3 15.3s6.863 15.3 15.3 15.3 15.3-6.863 15.3-15.3-6.863-15.3-15.3-15.3zm0 28c-4.021 0-7.605-1.884-9.933-4.81a12.425 12.425 0 0 1 6.451-4.4 6.507 6.507 0 0 1 -3.018-5.49c0-3.584 2.916-6.5 6.5-6.5s6.5 2.916 6.5 6.5a6.513 6.513 0 0 1 -3.019 5.491 12.42 12.42 0 0 1 6.452 4.4c-2.328 2.925-5.912 4.809-9.933 4.809z" />
-                    </svg>
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* end login */}
-      </nav>
-      <main className="grid grid-cols-1 lg:grid-cols-10 gap-6 my-12 w-lg container px-2 mx-auto">
-        <div className="lg:col-start-4 lg:col-span-4">
+    <main className="grid grid-cols-1 lg:grid-cols-10 gap-6 my-12 w-lg container px-2 mx-auto">
+      <div className="lg:col-start-4 lg:col-span-4">
         <aside className="">
-          <div className="bg-white shadow rounded-lg p-10">
-            <div className="flex flex-col gap-1 text-center items-center">
-              <img 
-                className="h-32 w-32 bg-white p-2 rounded-full shadow mb-4"
-                src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
-                alt=""
-              />
-              <p className="font-semibold">John Doe</p>
-              <div className="text-sm leading-normal text-gray-400 flex justify-center items-center">
-                <svg
-                  viewBox="0 0 24 24"
-                  className="mr-1"
-                  width={16}
-                  height={16}
-                  stroke="currentColor"
-                  strokeWidth={2}
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx={12} cy={10} r={3} />
-                </svg>
-                Los Angeles, California
-              </div>
-            </div>
-            <div className="flex justify-center items-center gap-2 my-3">
-              <div className="font-semibold text-center mx-4">
-                <p className="text-black">102</p>
-                <span className="text-gray-400">Posts</span>
-              </div>
-              <div className="font-semibold text-center mx-4">
-                <p className="text-black">102</p>
-                <span className="text-gray-400">Followers</span>
-              </div>
-              <div className="font-semibold text-center mx-4">
-                <p className="text-black">102</p>
-                <span className="text-gray-400">Folowing</span>
-              </div>
-            </div>
-          </div>
-          <div className="bg-white shadow mt-6  rounded-lg p-6">
+          <div className="bg-white shadow rounded-lg p-6">
             <h3 className="text-gray-600 text-sm font-semibold mb-4">
               Following
             </h3>
@@ -193,7 +16,8 @@ const Home = () => {
               <li className="flex flex-col items-center space-y-2">
                 {/* Ring */}
                 <Link className="block bg-white p-1 rounded-full" href="#">
-                  <img  alt="" 
+                  <img
+                    alt=""
                     className="w-16 rounded-full"
                     src="https://images.unsplash.com/photo-1638612913771-8f00622b96fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200&q=80"
                   />
@@ -205,7 +29,8 @@ const Home = () => {
               <li className="flex flex-col items-center space-y-2">
                 {/* Ring */}
                 <Link className="block bg-white p-1 rounded-full" href="#">
-                  <img  alt="" 
+                  <img
+                    alt=""
                     className="w-16 rounded-full"
                     src="https://images.unsplash.com/photo-1638649602320-450b717fa622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200&q=80"
                   />
@@ -218,7 +43,8 @@ const Home = () => {
                 {/* Ring */}
                 <Link className="block bg-white p-1 rounded-full" href="#">
                   {/* Thumbnail */}
-                  <img  alt="" 
+                  <img
+                    alt=""
                     className="w-16 rounded-full"
                     src="https://images.unsplash.com/photo-1638708644743-2502f38000a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200&q=80"
                   />
@@ -231,7 +57,8 @@ const Home = () => {
                 {/* Ring */}
                 <Link className="block bg-white p-1 rounded-full" href="#">
                   {/* Thumbnail */}
-                  <img  alt="" 
+                  <img
+                    alt=""
                     className="w-16 rounded-full"
                     src="https://images.unsplash.com/photo-1638691899851-0e955bceba1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200&q=80"
                   />
@@ -243,7 +70,8 @@ const Home = () => {
               <li className="flex flex-col items-center space-y-2">
                 {/* Ring */}
                 <Link className="block bg-white p-1 rounded-full" href="#">
-                  <img  alt="" 
+                  <img
+                    alt=""
                     className="w-16 rounded-full"
                     src="https://images.unsplash.com/photo-1638612913771-8f00622b96fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200&q=80"
                   />
@@ -256,7 +84,8 @@ const Home = () => {
                 {/* Ring */}
                 <Link className="block bg-white p-1 rounded-full" href="#">
                   {/* Thumbnail */}
-                  <img  alt="" 
+                  <img
+                    alt=""
                     className="w-16 rounded-full"
                     src="https://images.unsplash.com/photo-1638649602320-450b717fa622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200&q=80"
                   />
@@ -266,7 +95,6 @@ const Home = () => {
               </li>
             </ul>
           </div>
-
         </aside>
         <article className="mt-5">
           <form className="bg-white shadow rounded-lg mb-6 p-4">
@@ -352,7 +180,7 @@ const Home = () => {
           <div className="bg-white shadow rounded-lg mb-6">
             <div className="flex flex-row px-2 py-3 mx-3">
               <div className="w-auto h-auto rounded-full">
-                <img 
+                <img
                   className="w-12 h-12 object-cover rounded-full shadow cursor-pointer"
                   alt="User avatar"
                   src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
@@ -376,28 +204,28 @@ const Home = () => {
             <div className="text-gray-400 font-medium text-sm mb-7 mt-6 mx-3 px-2">
               <div className="grid grid-cols-6 col-span-2   gap-2  ">
                 <div className=" overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
-                  <img 
+                  <img
                     className="h-full w-full object-cover "
                     src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
                     alt=""
                   />
                 </div>
                 <div className=" overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
-                  <img 
+                  <img
                     className="h-full w-full object-cover  "
                     src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1399&q=80"
                     alt=""
                   />
                 </div>
                 <div className=" overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
-                  <img 
+                  <img
                     className="h-full w-full object-cover "
                     src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                     alt=""
                   />
                 </div>
                 <div className=" overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
-                  <img 
+                  <img
                     className="h-full w-full object-cover "
                     src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
                     alt=""
@@ -407,7 +235,7 @@ const Home = () => {
                   <div className="text-white text-xl absolute inset-0  bg-slate-900/80 flex justify-center items-center">
                     + 23
                   </div>
-                  <img 
+                  <img
                     className="h-full w-full object-cover "
                     src="https://images.unsplash.com/photo-1560393464-5c69a73c5770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
                     alt=""
@@ -417,8 +245,8 @@ const Home = () => {
             </div>
             <div className="text-gray-500 text-sm mb-6 mx-3 px-2">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-              ever since the 1500
+              industry. Lorem Ipsum has been the industry&apos;s standard dummy
+              text ever since the 1500
             </div>
             <div className="flex justify-start mb-4 border-t border-gray-100">
               <div className="flex w-full mt-1 pt-2 pl-5">
@@ -438,22 +266,22 @@ const Home = () => {
                     />
                   </svg>
                 </span>
-                <img 
+                <img
                   className="inline-block object-cover w-8 h-8 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <img 
+                <img
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <img 
+                <img
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
                   alt=""
                 />
-                <img 
+                <img
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
                   alt=""
@@ -512,7 +340,8 @@ const Home = () => {
 
             {/* Example Comment */}
             <div className="text-black p-4 antialiased flex">
-              <img  alt="" 
+              <img
+                alt=""
                 className="rounded-full h-8 w-8 mr-2 mt-1 "
                 src="https://picsum.photos/id/1027/200/200"
               />
@@ -656,11 +485,10 @@ const Home = () => {
               </div>
             </div>
             <div className="relative flex items-center self-center w-full max-w-xl p-4 overflow-hidden text-gray-600 focus-within:text-gray-400">
-              <img 
+              <img
                 className="w-10 h-10 object-cover rounded-full shadow mr-2 cursor-pointer"
                 alt="User avatar"
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
-              
               />
               <span className="absolute inset-y-0 right-0 flex items-center pr-6">
                 <button
@@ -692,12 +520,12 @@ const Home = () => {
               />
             </div>
           </div>
-          
+
           {/* Second Post */}
           <div className="bg-white shadow rounded-lg mb-6">
             <div className="flex flex-row px-2 py-3 mx-3">
               <div className="w-auto h-auto rounded-full border-2 border-green-500">
-                <img  
+                <img
                   className="w-12 h-12 object-cover rounded-full shadow cursor-pointer"
                   alt="User avatar"
                   src="https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200"
@@ -719,7 +547,8 @@ const Home = () => {
             </div>
             <div className="border-b border-gray-100" />
             <div className="text-gray-400 font-medium text-sm mb-7 mt-6 mx-3 px-2">
-              <img  alt="" 
+              <img
+                alt=""
                 className="rounded w-full"
                 src="https://picsum.photos/536/354"
               />
@@ -729,8 +558,8 @@ const Home = () => {
             </div>
             <div className="text-gray-500 text-sm mb-6 mx-3 px-2">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-              ever since the 1500
+              industry. Lorem Ipsum has been the industry&apos;s standard dummy
+              text ever since the 1500
             </div>
             <div className="flex justify-start mb-4 border-t border-gray-100">
               <div className="flex w-full mt-1 pt-2 pl-5">
@@ -750,22 +579,22 @@ const Home = () => {
                     />
                   </svg>
                 </span>
-                <img 
+                <img
                   className="inline-block object-cover w-8 h-8 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <img 
+                <img
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <img 
+                <img
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
                   alt=""
                 />
-                <img 
+                <img
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
                   alt=""
@@ -821,7 +650,7 @@ const Home = () => {
               </div>
             </div>
             <div className="relative flex items-center self-center w-full max-w-xl p-4 overflow-hidden text-gray-600 focus-within:text-gray-400">
-              <img 
+              <img
                 className="w-10 h-10 object-cover rounded-full shadow mr-2 cursor-pointer"
                 alt="User avatar"
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
@@ -861,7 +690,7 @@ const Home = () => {
           <div className="bg-white shadow rounded-lg mb-6">
             <div className="flex flex-row px-2 py-3 mx-3">
               <div className="w-auto h-auto rounded-full border-2 border-green-500">
-                <img 
+                <img
                   className="w-12 h-12 object-cover rounded-full shadow cursor-pointer"
                   alt="User avatar"
                   src="https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200"
@@ -893,8 +722,8 @@ const Home = () => {
             </div>
             <div className="text-gray-500 text-sm mb-6 mx-3 px-2">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry&apos;s standard dummy text
-              ever since the 1500
+              industry. Lorem Ipsum has been the industry&apos;s standard dummy
+              text ever since the 1500
             </div>
             <div className="flex justify-start mb-4 border-t border-gray-100">
               <div className="flex w-full mt-1 pt-2 pl-5">
@@ -914,22 +743,22 @@ const Home = () => {
                     />
                   </svg>
                 </span>
-                <img 
+                <img
                   className="inline-block object-cover w-8 h-8 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <img 
+                <img
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <img 
+                <img
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
                   alt=""
                 />
-                <img 
+                <img
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
                   alt=""
@@ -985,7 +814,7 @@ const Home = () => {
               </div>
             </div>
             <div className="relative flex items-center self-center w-full max-w-xl p-4 overflow-hidden text-gray-600 focus-within:text-gray-400">
-              <img 
+              <img
                 className="w-10 h-10 object-cover rounded-full shadow mr-2 cursor-pointer"
                 alt="User avatar"
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
@@ -1021,9 +850,8 @@ const Home = () => {
             </div>
           </div>
         </article>
-        </div>
-      </main>
-    </div>
+      </div>
+    </main>
   );
 };
 
