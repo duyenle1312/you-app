@@ -1,4 +1,6 @@
 import React from "react";
+import Link from 'next/link'; 
+import Image from 'next/image'
 
 const Home = () => {
   return (
@@ -6,7 +8,7 @@ const Home = () => {
       <nav className="bg-white w-full flex relative shadow justify-between items-center px-8 h-20">
         {/* logo */}
         <div className="inline-flex">
-          <a className="flex _o6689fn" href="/">
+          <Link className="flex _o6689fn" href="/">
             <svg
               viewBox="0 0 24 24"
               width={24}
@@ -23,7 +25,7 @@ const Home = () => {
               <path d="M5 12H2a10 10 0 0 0 20 0h-3" />
             </svg>
             <h1 className="text-xl font-bold ml-3">YOU</h1>
-          </a>
+          </Link>
         </div>
         {/* end logo */}
         {/* search bar */}
@@ -143,7 +145,7 @@ const Home = () => {
         <aside className="">
           <div className="bg-white shadow rounded-lg p-10">
             <div className="flex flex-col gap-1 text-center items-center">
-              <img
+              <Image
                 className="h-32 w-32 bg-white p-2 rounded-full shadow mb-4"
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
                 alt=""
@@ -190,75 +192,75 @@ const Home = () => {
               {/* Story #1 */}
               <li className="flex flex-col items-center space-y-2">
                 {/* Ring */}
-                <a className="block bg-white p-1 rounded-full" href="#">
-                  <img
+                <Link className="block bg-white p-1 rounded-full" href="#">
+                  <Image alt="" 
                     className="w-16 rounded-full"
                     src="https://images.unsplash.com/photo-1638612913771-8f00622b96fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200&q=80"
                   />
-                </a>
+                </Link>
                 {/* Username */}
                 <span className="text-xs text-gray-500">Sage</span>
               </li>
               {/* Story #1 */}
               <li className="flex flex-col items-center space-y-2">
                 {/* Ring */}
-                <a className="block bg-white p-1 rounded-full" href="#">
-                  <img
+                <Link className="block bg-white p-1 rounded-full" href="#">
+                  <Image alt="" 
                     className="w-16 rounded-full"
                     src="https://images.unsplash.com/photo-1638649602320-450b717fa622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200&q=80"
                   />
-                </a>
+                </Link>
                 {/* Username */}
                 <span className="text-xs text-gray-500">Jett</span>
               </li>
               {/* Story #2 */}
               <li className="flex flex-col items-center space-y-2">
                 {/* Ring */}
-                <a className="block bg-white p-1 rounded-full" href="#">
+                <Link className="block bg-white p-1 rounded-full" href="#">
                   {/* Thumbnail */}
-                  <img
+                  <Image alt="" 
                     className="w-16 rounded-full"
                     src="https://images.unsplash.com/photo-1638708644743-2502f38000a0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200&q=80"
                   />
-                </a>
+                </Link>
                 {/* Username */}
                 <span className="text-xs text-gray-500">Sky</span>
               </li>
               {/* Story #3 */}
               <li className="flex flex-col items-center space-y-2">
                 {/* Ring */}
-                <a className="block bg-white p-1 rounded-full" href="#">
+                <Link className="block bg-white p-1 rounded-full" href="#">
                   {/* Thumbnail */}
-                  <img
+                  <Image alt="" 
                     className="w-16 rounded-full"
                     src="https://images.unsplash.com/photo-1638691899851-0e955bceba1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200&q=80"
                   />
-                </a>
+                </Link>
                 {/* Username */}
                 <span className="text-xs text-gray-500">Olivia</span>
               </li>
               {/* Story #4 */}
               <li className="flex flex-col items-center space-y-2">
                 {/* Ring */}
-                <a className="block bg-white p-1 rounded-full" href="#">
-                  <img
+                <Link className="block bg-white p-1 rounded-full" href="#">
+                  <Image alt="" 
                     className="w-16 rounded-full"
                     src="https://images.unsplash.com/photo-1638612913771-8f00622b96fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200&q=80"
                   />
-                </a>
+                </Link>
                 {/* Username */}
                 <span className="text-xs text-gray-500">Julia</span>
               </li>
               {/* Story #1 */}
               <li className="flex flex-col items-center space-y-2">
                 {/* Ring */}
-                <a className="block bg-white p-1 rounded-full" href="#">
+                <Link className="block bg-white p-1 rounded-full" href="#">
                   {/* Thumbnail */}
-                  <img
+                  <Image alt="" 
                     className="w-16 rounded-full"
                     src="https://images.unsplash.com/photo-1638649602320-450b717fa622?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200&q=80"
                   />
-                </a>
+                </Link>
                 {/* Username */}
                 <span className="text-xs text-gray-500">Hendrick</span>
               </li>
@@ -350,7 +352,7 @@ const Home = () => {
           <div className="bg-white shadow rounded-lg mb-6">
             <div className="flex flex-row px-2 py-3 mx-3">
               <div className="w-auto h-auto rounded-full">
-                <img
+                <Image
                   className="w-12 h-12 object-cover rounded-full shadow cursor-pointer"
                   alt="User avatar"
                   src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
@@ -374,28 +376,28 @@ const Home = () => {
             <div className="text-gray-400 font-medium text-sm mb-7 mt-6 mx-3 px-2">
               <div className="grid grid-cols-6 col-span-2   gap-2  ">
                 <div className=" overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
-                  <img
+                  <Image
                     className="h-full w-full object-cover "
                     src="https://images.unsplash.com/photo-1517487881594-2787fef5ebf7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80"
                     alt=""
                   />
                 </div>
                 <div className=" overflow-hidden rounded-xl col-span-3 max-h-[14rem]">
-                  <img
+                  <Image
                     className="h-full w-full object-cover  "
                     src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1399&q=80"
                     alt=""
                   />
                 </div>
                 <div className=" overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
-                  <img
+                  <Image
                     className="h-full w-full object-cover "
                     src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
                     alt=""
                   />
                 </div>
                 <div className=" overflow-hidden rounded-xl col-span-2 max-h-[10rem]">
-                  <img
+                  <Image
                     className="h-full w-full object-cover "
                     src="https://images.unsplash.com/photo-1503602642458-232111445657?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
                     alt=""
@@ -405,7 +407,7 @@ const Home = () => {
                   <div className="text-white text-xl absolute inset-0  bg-slate-900/80 flex justify-center items-center">
                     + 23
                   </div>
-                  <img
+                  <Image
                     className="h-full w-full object-cover "
                     src="https://images.unsplash.com/photo-1560393464-5c69a73c5770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80"
                     alt=""
@@ -415,7 +417,7 @@ const Home = () => {
             </div>
             <div className="text-gray-500 text-sm mb-6 mx-3 px-2">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industry&apos;s standard dummy text
               ever since the 1500
             </div>
             <div className="flex justify-start mb-4 border-t border-gray-100">
@@ -436,22 +438,22 @@ const Home = () => {
                     />
                   </svg>
                 </span>
-                <img
+                <Image
                   className="inline-block object-cover w-8 h-8 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <img
+                <Image
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <img
+                <Image
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
                   alt=""
                 />
-                <img
+                <Image
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
                   alt=""
@@ -510,7 +512,7 @@ const Home = () => {
 
             {/* Example Comment */}
             <div className="text-black p-4 antialiased flex">
-              <img
+              <Image alt="" 
                 className="rounded-full h-8 w-8 mr-2 mt-1 "
                 src="https://picsum.photos/id/1027/200/200"
               />
@@ -654,7 +656,7 @@ const Home = () => {
               </div>
             </div>
             <div className="relative flex items-center self-center w-full max-w-xl p-4 overflow-hidden text-gray-600 focus-within:text-gray-400">
-              <img
+              <Image
                 className="w-10 h-10 object-cover rounded-full shadow mr-2 cursor-pointer"
                 alt="User avatar"
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
@@ -694,7 +696,7 @@ const Home = () => {
           <div className="bg-white shadow rounded-lg mb-6">
             <div className="flex flex-row px-2 py-3 mx-3">
               <div className="w-auto h-auto rounded-full border-2 border-green-500">
-                <img
+                <Image 
                   className="w-12 h-12 object-cover rounded-full shadow cursor-pointer"
                   alt="User avatar"
                   src="https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200"
@@ -716,7 +718,7 @@ const Home = () => {
             </div>
             <div className="border-b border-gray-100" />
             <div className="text-gray-400 font-medium text-sm mb-7 mt-6 mx-3 px-2">
-              <img
+              <Image alt="" 
                 className="rounded w-full"
                 src="https://picsum.photos/536/354"
               />
@@ -726,7 +728,7 @@ const Home = () => {
             </div>
             <div className="text-gray-500 text-sm mb-6 mx-3 px-2">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industry&apos;s standard dummy text
               ever since the 1500
             </div>
             <div className="flex justify-start mb-4 border-t border-gray-100">
@@ -747,22 +749,22 @@ const Home = () => {
                     />
                   </svg>
                 </span>
-                <img
+                <Image
                   className="inline-block object-cover w-8 h-8 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <img
+                <Image
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <img
+                <Image
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
                   alt=""
                 />
-                <img
+                <Image
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
                   alt=""
@@ -818,7 +820,7 @@ const Home = () => {
               </div>
             </div>
             <div className="relative flex items-center self-center w-full max-w-xl p-4 overflow-hidden text-gray-600 focus-within:text-gray-400">
-              <img
+              <Image
                 className="w-10 h-10 object-cover rounded-full shadow mr-2 cursor-pointer"
                 alt="User avatar"
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
@@ -858,7 +860,7 @@ const Home = () => {
           <div className="bg-white shadow rounded-lg mb-6">
             <div className="flex flex-row px-2 py-3 mx-3">
               <div className="w-auto h-auto rounded-full border-2 border-green-500">
-                <img
+                <Image
                   className="w-12 h-12 object-cover rounded-full shadow cursor-pointer"
                   alt="User avatar"
                   src="https://images.unsplash.com/photo-1477118476589-bff2c5c4cfbb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=200"
@@ -880,7 +882,7 @@ const Home = () => {
             </div>
             <div className="border-b border-gray-100" />
             <div className="text-gray-400 font-medium text-sm mb-7 mt-6 mx-3 px-2">
-              {/* <img
+              {/* <Image 
                 className="rounded w-full"
                 src="https://picsum.photos/536/354"
               /> */}
@@ -890,7 +892,7 @@ const Home = () => {
             </div>
             <div className="text-gray-500 text-sm mb-6 mx-3 px-2">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industry&apos;s standard dummy text
               ever since the 1500
             </div>
             <div className="flex justify-start mb-4 border-t border-gray-100">
@@ -911,22 +913,22 @@ const Home = () => {
                     />
                   </svg>
                 </span>
-                <img
+                <Image
                   className="inline-block object-cover w-8 h-8 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <img
+                <Image
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                   alt=""
                 />
-                <img
+                <Image
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
                   alt=""
                 />
-                <img
+                <Image
                   className="inline-block object-cover w-8 h-8 -ml-2 text-white border-2 border-white rounded-full shadow-sm cursor-pointer"
                   src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=256&h=256&q=80"
                   alt=""
@@ -982,7 +984,7 @@ const Home = () => {
               </div>
             </div>
             <div className="relative flex items-center self-center w-full max-w-xl p-4 overflow-hidden text-gray-600 focus-within:text-gray-400">
-              <img
+              <Image
                 className="w-10 h-10 object-cover rounded-full shadow mr-2 cursor-pointer"
                 alt="User avatar"
                 src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
